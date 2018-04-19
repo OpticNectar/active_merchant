@@ -87,6 +87,7 @@ module ActiveMerchant #:nodoc:
           xml.tag! 'RequestData' do
             xml.tag! 'Vendor', @options[:login]
             xml.tag! 'Partner', @options[:partner]
+            xml.tag! 'ButtonSource', @options[:application_id].to_s.slice(0,32) unless @options[:application_id].blank?
             if options[:request_type] == :recurring
               xml << body
             else
