@@ -153,6 +153,7 @@ module ActiveMerchant #:nodoc:
               end
             end
           end
+          xml.tag!('ExtData', 'Name'=> 'ButtonSource', 'Value'=> 'SecondMelody_SP')
         end
         xml.target!
       end
@@ -186,6 +187,7 @@ module ActiveMerchant #:nodoc:
               add_credit_card(xml, credit_card, options)
             end
           end
+          xml.tag!('ExtData', 'Name'=> 'ButtonSource', 'Value'=> 'SecondMelody_SP')
         end
         xml.target!
       end
@@ -212,6 +214,7 @@ module ActiveMerchant #:nodoc:
               end
             end
           end
+          xml.tag!('ExtData', 'Name'=> 'ButtonSource', 'Value'=> 'SecondMelody_SP')
         end
         xml.target!
       end
